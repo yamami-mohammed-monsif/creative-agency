@@ -33,6 +33,17 @@
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-400: hsla(0, 0%, 27%, 1);
   --clr-neutral-700: hsla(0, 0%, 11%, 1);
+
+  --button-padding-inline: clamp(
+    35px,
+    calc(35px + 0.014 * (100vw - 375px)),
+    50px
+  );
+  --button-padding-block: clamp(
+    10px,
+    calc(10px + 0.0018 * (100vw - 375px)),
+    12px
+  );
 }
 
 *,
