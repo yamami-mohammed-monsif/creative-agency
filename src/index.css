@@ -27,7 +27,6 @@
   --fs-project-title: 24px;
 
   /* colors */
-
   --clr-primary-300: hsla(219, 100%, 61%, 0.5);
   --clr-primary-400: hsla(219, 100%, 61%, 1);
 
@@ -78,6 +77,8 @@ body {
   min-height: 100vh;
   font-family: var(--ff-main);
   font-size: var(--fs-regular);
+  color: var(--clr-neutral-400);
+  padding-top: clamp(40px, calc(40px + 0.0309 * (100vw - 375px)), 73px);
 }
 
 .container {
