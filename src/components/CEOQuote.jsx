@@ -1,11 +1,13 @@
-import profilePic from "../assets/CEO-image.png";
+import profilePic from "../assets/ceo-image.jpg";
 
 function CEOQuote({ className }) {
   return (
     <div className={className}>
       <div className="ceo-quote">
         <div className="profile-info">
-          <img src={profilePic} alt="CEO Profile" />
+          <div className="profile-picture">
+            <img src={profilePic} alt="CEO profile picture" />
+          </div>
           <div>
             <p>Bill Adams</p>
             <span>CEO UpTech</span>

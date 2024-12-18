@@ -1,5 +1,6 @@
 .hero-section {
   text-align: center;
+  margin-bottom: clamp(100px, calc(100px + 0.0563 * (100vw - 375px)), 160px);
 }
 
 .hero-content {
@@ -17,6 +18,7 @@
   margin-bottom: clamp(20px, calc(20px + 0.0112 * (100vw - 375px)), 32px);
 }
 
+/* start project button */
 .primary-cta-btn {
   color: var(--clr-neutral-100);
   background-color: var(--clr-primary-400);
@@ -28,19 +30,21 @@
   border-radius: 1.5rem;
   box-shadow: 0 4px 8px var(--clr-primary-300);
   cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 .primary-cta-btn:hover {
   opacity: 80%;
-  transform: scale(1.15);
-  transition: all ease 0.3s;
+  transform: scale(1.2);
 }
 
+/* hero image */
 .hero-image-container {
   display: inline-block;
   position: relative;
 }
 
+/* projects number card */
 .projects-done-container {
   position: absolute;
   background-color: var(--clr-neutral-100);
@@ -72,6 +76,7 @@
   margin-right: 3px;
 }
 
+/* ceo quote card */
 .ceo-quote-container {
   width: clamp(80px, calc(80px + 0.0807 * (100vw - 375px)), 166px);
   height: clamp(80px, calc(80px + 0.0807 * (100vw - 375px)), 166px);
@@ -94,6 +99,18 @@
   align-items: center;
   gap: clamp(5px, calc(5px + 0.0046 * (100vw - 375px)), 10px);
   margin-bottom: 12px;
+}
+
+.profile-picture {
+  width: clamp(15px, calc(15px + 0.0159 * (100vw - 375px)), 32px);
+  height: clamp(15px, calc(15px + 0.0159 * (100vw - 375px)), 32px);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  position: relative;
+  top: -4px;
 }
 
 .profile-info p {
@@ -122,6 +139,11 @@
   .projects-done-container {
     top: 24px;
     left: -107px;
+  }
+
+  .ceo-quote-container {
+    right: -115px;
+    bottom: -5px;
   }
 }
 

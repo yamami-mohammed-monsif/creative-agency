@@ -1,8 +1,33 @@
+import { useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
+import ContactUs from "../contact-us/ContactUs";
+import MenuBtn from "../menu-btn/MenuBtn";
+import Navbar from "../navbar/Navbar";
 
 import "./primary-header.css";
 
 function PrimaryHeader() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 850);
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleScreenResize() {
+    setIsSmallScreen(window.innerWidth <= 850);
+  }
+
+  useEffect(() => {
+    //runs once on mount
+    handleScreenResize();
+
+    window.addEventListener("resize", handleScreenResize);
+    return () => {
+      window.removeEventListener("resize", handleScreenResize);
+    };
+  }, []);
+
+  function toggleMenu() {
+    setIsOpen((prev) => !prev);
+  }
+
   return (
     <div className="primary-header">
       <div className="logo-container">
@@ -14,11 +39,13 @@ function PrimaryHeader() {
           <span>Creative</span>
         </div>
       </div>
-      <div className="primary-header__menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <Navbar isOpen={isOpen} />
+      {isSmallScreen ? (
+        <MenuBtn isOpen={isOpen} onToggle={toggleMenu} />
+      ) : (
+        <ContactUs />
+      )}
+      {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
     </div>
   );
 }

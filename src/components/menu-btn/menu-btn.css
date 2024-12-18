@@ -1,0 +1,35 @@
+.primary-header__menu-btn {
+  width: 29px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.primary-header__menu-btn .line {
+  transition: y 300ms ease 300ms, rotate 300ms ease, opacity 0ms 300ms;
+  transform-origin: center;
+}
+
+.primary-header__menu-btn.open .line {
+  transition: y 300ms ease, rotate 300ms ease 300ms, opacity 0ms 300ms;
+  transform-origin: center;
+}
+
+.primary-header__menu-btn.open :is(.top, .bottom) {
+  y: 45;
+}
+
+.primary-header__menu-btn.open .top {
+  rotate: 45deg;
+}
+.primary-header__menu-btn.open .bottom {
+  rotate: -45deg;
+}
+
+.primary-header__menu-btn.open .middle {
+  opacity: 0;
+}
