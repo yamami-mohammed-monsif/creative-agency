@@ -1,0 +1,18 @@
+.filled-btn {
+  text-decoration: none;
+  display: block;
+  padding: var(--button-padding-block) var(--button-padding-inline);
+  border-radius: var(--button-border-radius);
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-button);
+  font-weight: 700;
+  box-shadow: 0 4px 8px var(--clr-primary-300);
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.filled-btn:hover {
+  opacity: 80%;
+  transform: scale(1.2);
+}

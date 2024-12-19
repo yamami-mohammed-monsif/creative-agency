@@ -4,32 +4,24 @@
 }
 
 .hero-content {
-  /* max-width: calc(100% - 450px); */
   width: clamp(340px, calc(340px + 0.5164 * (100vw - 375px)), 890px);
   margin-inline: auto;
 }
 
 .primary-heading {
   font-size: var(--fs-h1);
+  line-height: clamp(28px, calc(28px + 0.0553 * (100vw - 375px)), 87px);
 }
 
-.description {
+.hero-description {
   margin-top: clamp(20px, calc(20px + 0.0037 * (100vw - 375px)), 24px);
   margin-bottom: clamp(20px, calc(20px + 0.0112 * (100vw - 375px)), 32px);
+  line-height: clamp(24px, calc(24px + 0.0056 * (100vw - 375px)), 30px);
 }
 
 /* start project button */
 .primary-cta-btn {
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-400);
-  font-size: var(--fs-button);
-  font-weight: 700;
-  padding-inline: var(--button-padding-inline);
-  padding-block: var(--button-padding-block);
   margin-bottom: clamp(50px, calc(50px + 0.046 * (100vw - 375px)), 99px);
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 8px var(--clr-primary-300);
-  cursor: pointer;
   transition: all ease 0.3s;
 }
 

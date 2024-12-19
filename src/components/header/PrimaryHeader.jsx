@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
-import ContactUs from "../contact-us/ContactUs";
+import ContactUsBtn from "../UI/transparent-button/TransparentBtn";
 import MenuBtn from "../menu-btn/MenuBtn";
 import Navbar from "../navbar/Navbar";
 
@@ -43,7 +43,7 @@ function PrimaryHeader() {
       {isSmallScreen ? (
         <MenuBtn isOpen={isOpen} onToggle={toggleMenu} />
       ) : (
-        <ContactUs />
+        <ContactUsBtn text="contact us" />
       )}
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
     </div>

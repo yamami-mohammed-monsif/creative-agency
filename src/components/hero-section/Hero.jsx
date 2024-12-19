@@ -1,3 +1,4 @@
+import FilledBtn from "../UI/filled-button/FilledBtn";
 import ProjectsDoneCard from "../ProjectsDoneCard";
 import CEOQuote from "../CEOQuote";
 import heroImg from "../../assets/hero-img.png";
@@ -13,12 +14,15 @@ function Hero() {
         <h1 className="primary-heading">
           Make your dream business goal come true
         </h1>
-        <p className="description">
+        <p className="hero-description">
           when you need us for improve your business,
           <br /> then come with us to help your business have reach it, you just
           sit and feel that goal.{" "}
         </p>
-        <button className="primary-cta-btn">Start Project</button>
+        {/* <button className="primary-cta-btn">Start Project</button> */}
+        <button className="primary-cta-btn">
+          <FilledBtn text="Start Project" path="/start-project" />
+        </button>
       </div>
       <div className="hero-image-container">
         <img src={heroImg} alt="hero image" />
