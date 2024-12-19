@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
 import ContactUsBtn from "../UI/transparent-button/TransparentBtn";
-import MenuBtn from "../menu-btn/MenuBtn";
+import MenuBtn from "../UI/menu-btn/MenuBtn";
 import Navbar from "../navbar/Navbar";
 
 import "./primary-header.css";
