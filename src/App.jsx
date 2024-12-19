@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/homePage/Home";
-import AboutUs from "./pages/aboutPage/AboutUs";
 import StartProject from "./pages/StartProjectPage/StartProject";
+import AboutUs from "./pages/aboutPage/AboutUs";
+import OurServies from "./pages/our-services/OurServies";
 
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/start-project" element={<StartProject />} />
+        <Route path="/our-services" element={<OurServies />} />
       </Routes>
     </div>
   );

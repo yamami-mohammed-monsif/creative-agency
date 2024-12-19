@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import OurStoryBtn from "../UI/transparent-button/TransparentBtn";
 import FilledBtn from "../UI/filled-button/FilledBtn";
 import { faCirclePlay } from "@fortawesome/free-regular-svg-icons";

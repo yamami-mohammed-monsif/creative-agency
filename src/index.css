@@ -75,7 +75,7 @@ picture {
 }
 
 a {
-  text-emphasis: none;
+  text-decoration: none;
   font: inherit;
   color: inherit;
   cursor: pointer;
