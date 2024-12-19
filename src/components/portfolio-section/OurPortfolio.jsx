@@ -7,14 +7,17 @@ import "./our-portfolio.css";
 
 const projects = [
   {
+    id: 1,
     name: "Design Furniture App",
     image: furnitureAppImg,
   },
   {
+    id: 2,
     name: "Cloud App",
     image: cloudAppImg,
   },
   {
+    id: 3,
     name: "Design Byte App",
     image: byteAppImg,
   },
@@ -34,7 +37,7 @@ function OurPortfolio() {
       <div className="projects-container">
         {projects.map((item) => {
           return (
-            <a href="" className="project">
+            <a href="" className="project" key={item.id}>
               <img src={item.image} alt={item.name} />
               <p className="project-name">{item.name}</p>
             </a>

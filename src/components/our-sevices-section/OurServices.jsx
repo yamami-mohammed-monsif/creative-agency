@@ -9,21 +9,25 @@ import "./our-services.css";
 
 const services = [
   {
+    id: 1,
     name: "Social Media Management",
     icon: <HiOutlineTv size={42} color="white" />,
     bgColor: "hsla(219, 100%, 61%, 1)",
   },
   {
+    id: 2,
     name: "Search Engine Opimization",
     icon: <IoSettingsOutline size={42} color="white" />,
     bgColor: "hsla(0, 100%, 59%, 1)",
   },
   {
+    id: 3,
     name: "Design",
     icon: <CiPen size={42} color="white" />,
     bgColor: "hsla(108, 73%, 64%, 1)",
   },
   {
+    id: 4,
     name: "Ads",
     icon: <FiTv size={42} color="white" />,
     bgColor: "hsla(40, 100%, 50%, 1)",
@@ -50,6 +54,7 @@ function OurServices() {
         {services.map((item) => {
           return (
             <ServiceCard
+              key={item.id}
               text={item.name}
               icon={item.icon}
               color={item.bgColor}

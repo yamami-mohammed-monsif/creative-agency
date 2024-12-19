@@ -2,6 +2,7 @@ import OurStoryBtn from "../UI/transparent-button/TransparentBtn";
 import FilledBtn from "../UI/filled-button/FilledBtn";
 import { faCirclePlay } from "@fortawesome/free-regular-svg-icons";
 import aboutImg from "../../assets/about-image.png";
+import purpleBubblesImg from "../../assets/purple-bubbles.png";
 import "./about.css";
 
 function About() {
@@ -33,6 +34,7 @@ function About() {
           </div>
           <div className="grid-item image">
             <img src={aboutImg} alt="about section image" />
+            <img src={purpleBubblesImg} className="purple-bubbles" />
           </div>
         </div>
       </div>

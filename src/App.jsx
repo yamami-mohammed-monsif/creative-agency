@@ -6,7 +6,6 @@ import OurServies from "./pages/our-services/OurServies";
 import Portfolio from "./pages/portfolioPage/portfolio";
 
 import "./App.css";
-import OurPortfolio from "./components/portfolio-section/OurPortfolio";
 
 function App() {
   return (
