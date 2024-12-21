@@ -1,7 +1,7 @@
 .testimonial-card {
   width: clamp(340px, calc(340px + 0.0375 * (100vw - 375px)), 380px);
   height: clamp(257px, calc(257px + 0.0779 * (100vw - 375px)), 335px);
-  padding: 40px;
+  padding: 2.5em;
   border-radius: 20px;
   box-shadow: 0px 8px 24px hsla(0, 0%, 0%, 0.05);
 }
@@ -29,7 +29,6 @@
   font-size: var(--fs-testimonial-name);
   font-weight: 600;
   color: var(--clr-primary-400);
-  margin-bottom: 7px;
 }
 
 .testimonial-job {
@@ -42,7 +41,14 @@
   opacity: 80%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) and (min-width: 750px) {
+  .testimonial-card {
+    flex: 1 0 calc(50% - 25px);
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 750px) {
   .testimonial-card {
     flex: 1 0 100%;
     scroll-snap-align: start;
