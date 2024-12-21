@@ -36,7 +36,7 @@ const services = [
 
 function OurServices() {
   return (
-    <div className="our-services">
+    <section className="our-services">
       <div>
         <p className="section-title">Our Services</p>
         <h2>Perfect and Fast Movement</h2>
@@ -62,7 +62,7 @@ function OurServices() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

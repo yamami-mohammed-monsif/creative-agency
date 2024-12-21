@@ -8,7 +8,7 @@
   justify-content: center;
   gap: clamp(27px, calc(27px + 0.0046 * (100vw - 375px)), 32px);
   border-radius: 30px;
-  padding: 35px 70px;
+  padding: 35px 45px;
   box-shadow: 4px 4px 30px hsla(0, 0%, 0%, 0.1);
 }
 
@@ -16,7 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: max-content;
   width: 100px;
   height: 100px;
   border-radius: 50%;

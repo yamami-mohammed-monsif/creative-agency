@@ -29,7 +29,7 @@ function PrimaryHeader() {
   }
 
   return (
-    <div className="primary-header">
+    <section className="primary-header">
       <div className="logo-container">
         <div className="primary-logo">
           <img src={logo} alt="logo" />
@@ -46,7 +46,7 @@ function PrimaryHeader() {
         <ContactUsBtn text="contact us" />
       )}
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
-    </div>
+    </section>
   );
 }
 

@@ -9,7 +9,7 @@ import "./hero.css";
 
 function Hero() {
   return (
-    <div className="hero-section">
+    <section className="hero-section">
       <div className="hero-content">
         <h1 className="primary-heading">
           Make your dream business goal come true
@@ -31,7 +31,7 @@ function Hero() {
         <img src={redBubbles} className="red-bubbles" />
         <img src={blueBubbles} className="blue-bubbles" />
       </div>
-    </div>
+    </section>
   );
 }
 

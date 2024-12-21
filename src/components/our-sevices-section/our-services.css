@@ -41,7 +41,9 @@
 
 .service-cards-container {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(262px, 262px));
   gap: 2.18rem;
+  align-items: center;
   justify-content: center;
 }
 

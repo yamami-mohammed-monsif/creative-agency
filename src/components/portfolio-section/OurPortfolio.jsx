@@ -25,7 +25,7 @@ const projects = [
 
 function OurPortfolio() {
   return (
-    <div className="portfolio-section">
+    <section className="portfolio-section">
       <div className="portfolio-content">
         <p className="section-title">Our Portfolio</p>
         <h2>What do we do</h2>
@@ -49,7 +49,7 @@ function OurPortfolio() {
           <TransparentBtn text="See All Portfolio" />
         </Link>
       </div>
-    </div>
+    </section>
   );
 }
 
