@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  box-shadow: 0px 8px 24px hsla(0, 0%, 0%, 0.05);
   scrollbar-width: none;
   margin-top: clamp(35px, calc(35px + 0.014 * (100vw - 375px)), 50px);
 }
