@@ -1,0 +1,63 @@
+.cta-section {
+  text-align: center;
+  margin-bottom: clamp(100px, calc(100px + 0.0704 * (100vw - 375px)), 178px);
+  display: grid;
+  align-items: center;
+  gap: clamp(45px, calc(45px + 0.1098 * (100vw - 375px)), 162px);
+}
+
+.images-container {
+  position: relative;
+  height: clamp(274px, calc(274px + 0.0985 * (100vw - 375px)), 379px);
+  width: clamp(340px, calc(340px + 0.2319 * (100vw - 375px)), 587px);
+  margin-inline: auto;
+}
+
+.image-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(188px, calc(188px + 0.0995 * (100vw - 375px)), 294px);
+  height: clamp(177px, calc(188px + 0.1042 * (100vw - 375px)), 288px);
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.image-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: clamp(221px, calc(188px + 0.0976 * (100vw - 375px)), 325px);
+  height: clamp(196px, calc(188px + 0.0863 * (100vw - 375px)), 288px);
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.cta-section h1 {
+  font-size: clamp(28px, calc(28px + 0.0255 * (100vw - 375px)), 55px);
+}
+
+.cta-section .description {
+  margin-block: 25px;
+}
+
+@media (min-width: 800px) {
+  .cta-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    text-align: left;
+  }
+
+  .images-container {
+    grid-area: image;
+  }
+
+  .section-content {
+    grid-area: text;
+  }
+
+  .image-2 {
+    left: 31px;
+    bottom: 10px;
+  }
+}

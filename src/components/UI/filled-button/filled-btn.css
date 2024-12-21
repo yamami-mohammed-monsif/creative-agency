@@ -1,6 +1,6 @@
 .filled-btn {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   padding: var(--button-padding-block) var(--button-padding-inline);
   border-radius: var(--button-border-radius);
   background-color: var(--clr-primary-400);
