@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import ContactUsBtn from "../UI/transparent-button/TransparentBtn";
 import MenuBtn from "../UI/menu-btn/MenuBtn";
 import Navbar from "../navbar/Navbar";
+import { Link } from "react-router-dom";
 
 import "./primary-header.css";
 
@@ -43,7 +44,9 @@ function PrimaryHeader() {
       {isSmallScreen ? (
         <MenuBtn isOpen={isOpen} onToggle={toggleMenu} />
       ) : (
-        <ContactUsBtn text="contact us" />
+        <Link to="/contact">
+          <ContactUsBtn text="contact us" />
+        </Link>
       )}
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
     </section>

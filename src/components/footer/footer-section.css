@@ -1,0 +1,144 @@
+.footer {
+  background-color: var(--clr-neutral-500);
+  color: var(--clr-neutral-100);
+  padding-top: clamp(45px, calc(45px + 0.0816 * (100vw - 375px)), 132px);
+  padding-bottom: 60px;
+  padding-inline: clamp(26px, calc(26px + 0.0723 * (100vw - 375px)), 75px);
+  line-height: 30px;
+  position: relative;
+}
+
+.footer span,
+.footer a {
+  display: block;
+}
+
+.footer-grid {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "terms-and-policies terms-and-policies company"
+    "contact contact contact"
+    "location location loaction";
+}
+
+.footer-logo-container {
+  color: var(--clr-neutral-700);
+  background-color: var(--clr-neutral-100);
+  width: 187px;
+  height: 88px;
+  padding: 25px 19px;
+  margin-bottom: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10.77px;
+}
+
+.footer-logo {
+  width: 53px;
+  height: 50px;
+}
+
+.footer-logo-container span:nth-child(1) {
+  font-weight: 700;
+}
+
+.terms-and-policies {
+  grid-area: terms-and-policies;
+  margin-bottom: 85px;
+}
+
+.company {
+  grid-area: company;
+}
+
+.contact {
+  grid-area: contact;
+  margin-bottom: 45px;
+}
+
+.location {
+  grid-area: location;
+}
+
+.footer-title {
+  font-size: var(--fs-footer-titles);
+  font-weight: 700;
+}
+
+.footer-title ~ span,
+.footer-title ~ a {
+  font-size: 18px;
+}
+
+.footer a {
+  transition: transform 0.3s ease;
+}
+
+.footer-grid a:hover {
+  transform: scale(1.2);
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(25px, calc(25px + 0.014 * (100vw - 375px)), 40px);
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.social-links a {
+  width: clamp(36px, calc(36px + 0.0037 * (100vw - 375px)), 40px);
+  height: clamp(36px, calc(36px + 0.0037 * (100vw - 375px)), 40px);
+  border-radius: 50%;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px;
+}
+
+.social-links a:hover {
+  transform: scale(1.4);
+  box-shadow: 0 0 10px 4px white;
+}
+
+.copyright {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--clr-neutral-100);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 97px;
+}
+
+@media (min-width: 900px) {
+  .footer-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 68px;
+  }
+
+  .footer-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 77px;
+    flex-wrap: wrap;
+  }
+
+  hr {
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

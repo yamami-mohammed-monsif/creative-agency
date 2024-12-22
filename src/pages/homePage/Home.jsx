@@ -5,18 +5,22 @@ import OurServices from "../../components/our-sevices-section/OurServices";
 import OurPortfolio from "../../components/portfolio-section/OurPortfolio";
 import Testimonials from "../../components/testimonials/testimonials";
 import CallToAction from "../../components/call-to-action/CallToAction";
+import FooterSection from "../../components/footer/FooterSection";
 
 function Home() {
   return (
-    <div>
-      <PrimaryHeader />
-      <Hero />
-      <About />
-      <OurServices />
-      <OurPortfolio />
-      <Testimonials />
-      <CallToAction />
-    </div>
+    <>
+      <div className="container">
+        <PrimaryHeader />
+        <Hero />
+        <About />
+        <OurServices />
+        <OurPortfolio />
+        <Testimonials />
+        <CallToAction />
+      </div>
+      <FooterSection />
+    </>
   );
 }
 

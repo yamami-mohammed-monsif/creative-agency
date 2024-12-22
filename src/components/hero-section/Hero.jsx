@@ -19,7 +19,6 @@ function Hero() {
           <br /> then come with us to help your business have reach it, you just
           sit and feel that goal.{" "}
         </p>
-        {/* <button className="primary-cta-btn">Start Project</button> */}
         <button className="primary-cta-btn">
           <FilledBtn text="Start Project" path="/start-project" />
         </button>

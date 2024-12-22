@@ -25,13 +25,14 @@
   );
   --fs-project-title: 24px;
   --fs-footer-titles: clamp(18px, calc(18px + 0.0037 * (100vw - 375px)), 22px);
-
+  --fs-footer-links: 18px;
   /* colors */
   --clr-primary-300: hsla(219, 100%, 61%, 0.5);
   --clr-primary-400: hsla(219, 100%, 61%, 1);
 
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-400: hsla(0, 0%, 27%, 1);
+  --clr-neutral-500: hsla(300, 2%, 22%, 1);
   --clr-neutral-700: hsla(0, 0%, 11%, 1);
 
   --button-padding-inline: clamp(
