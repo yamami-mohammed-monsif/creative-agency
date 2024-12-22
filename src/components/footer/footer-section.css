@@ -74,7 +74,7 @@
 }
 
 .footer a {
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .footer-grid a:hover {

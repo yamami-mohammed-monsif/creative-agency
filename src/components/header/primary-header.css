@@ -2,7 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4.25rem;
+  height: clamp(40px, calc(40px + 0.0751 * (100vw - 375px)), 120px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* padding-inline: 30px; */
+  padding: 30px;
+  z-index: 9999;
+  background-color: var(--clr-neutral-100);
+  /* border: solid 1px; */
 }
 
 .logo-container {

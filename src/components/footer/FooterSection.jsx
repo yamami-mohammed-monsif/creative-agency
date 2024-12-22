@@ -8,6 +8,10 @@ import { LuTwitter } from "react-icons/lu";
 import "./footer-section.css";
 
 function FooterSection() {
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <section className="footer">
       <div className="footer-flex">
@@ -28,7 +32,9 @@ function FooterSection() {
           </div>
           <div className="company">
             <span className="footer-title">Company</span>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={scrollToTop}>
+              Home
+            </Link>
             <Link to="/about">About Us</Link>
             <Link to="/contact">Contact Us</Link>
           </div>

@@ -36,7 +36,7 @@ const services = [
 
 function OurServices() {
   return (
-    <section className="our-services">
+    <section className="our-services" id="services">
       <div>
         <p className="section-title">Our Services</p>
         <h2>Perfect and Fast Movement</h2>

@@ -9,7 +9,7 @@
 
 .primary-navbar__nav-links li {
   position: relative;
-  transition: transform 300ms ease;
+  transition: all 300ms ease;
 }
 
 .primary-navbar__nav-links li:hover {

@@ -25,7 +25,7 @@ const projects = [
 
 function OurPortfolio() {
   return (
-    <section className="portfolio-section">
+    <section className="portfolio-section" id="projects">
       <div className="portfolio-content">
         <p className="section-title">Our Portfolio</p>
         <h2>What do we do</h2>

@@ -13,7 +13,7 @@ function CallToAction() {
       <div className="section-content">
         <h1>Interesting Collaboration With Us?</h1>
         <p className="description">Help you to reach your business goal</p>
-        <FilledBtn text="Get Started" />
+        <FilledBtn text="Get Started" path="/start-project" />
       </div>
     </section>
   );
