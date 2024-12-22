@@ -54,7 +54,11 @@ function OurPortfolio() {
           );
         })}
       </div>
-      <div className="see-all-portfolio-btn" data-aos="fade-left">
+      <div
+        className="see-all-portfolio-btn"
+        data-aos="fade-left"
+        data-aos-delay="400"
+      >
         <Link to="/our-portfolio">
           <TransparentBtn text="See All Portfolio" />
         </Link>
