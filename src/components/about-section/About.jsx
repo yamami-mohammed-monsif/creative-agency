@@ -9,10 +9,14 @@ function About() {
   return (
     <section className="about-section" id="about">
       <div className="about-content">
-        <p className="section-title">About Us</p>
-        <h2>Our Teammate</h2>
+        <p className="section-title" data-aos="fade-up">
+          About Us
+        </p>
+        <h2 data-aos="fade-up" data-aos-delay="400">
+          Our Teammate
+        </h2>
         <div className="grid">
-          <div className="grid-item text">
+          <div className="grid-item text" data-aos="fade-left">
             <div className="about-text">
               <p>
                 We move with make a Creative Strategy for help your business
@@ -32,7 +36,11 @@ function About() {
               <OurStoryBtn text="Our Story" icon={faCirclePlay} />
             </div>
           </div>
-          <div className="grid-item image">
+          <div
+            className="grid-item image"
+            data-aos="fade-right"
+            data-aos-delay="800"
+          >
             <img src={aboutImg} alt="about section image" />
             <img src={purpleBubblesImg} className="purple-bubbles" />
           </div>

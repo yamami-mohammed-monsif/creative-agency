@@ -37,7 +37,7 @@ const services = [
 function OurServices() {
   return (
     <section className="our-services" id="services">
-      <div>
+      <div data-aos="fade-right">
         <p className="section-title">Our Services</p>
         <h2>Perfect and Fast Movement</h2>
         <p className="services-text">
@@ -51,13 +51,15 @@ function OurServices() {
         </button>
       </div>
       <div className="service-cards-container">
-        {services.map((item) => {
+        {services.map((item, index) => {
           return (
             <ServiceCard
               key={item.id}
               text={item.name}
               icon={item.icon}
               color={item.bgColor}
+              data_aos={"flip-right"}
+              data_aos_delay={index * 250}
             />
           );
         })}

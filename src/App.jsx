@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/homePage/Home";
 import StartProject from "./pages/StartProjectPage/StartProject";
@@ -7,10 +8,20 @@ import Portfolio from "./pages/portfolioPage/portfolio";
 import Contact from "./pages/contactPage/contact";
 import TermsOfService from "./pages/terms-of-service/TermsOfService";
 import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      delay: 200,
+      once: false,
+    });
+  });
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

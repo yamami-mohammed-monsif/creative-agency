@@ -49,20 +49,26 @@ function Testimonials() {
 
   return (
     <section className="testimonials-section">
-      <p className="section-title">Testimonial</p>
-      <h2>People Talk about us</h2>
+      <p className="section-title" data-aos="fade-up">
+        Testimonial
+      </p>
+      <h2 data-aos="fade-up" data-aos-delay="400">
+        People Talk about us
+      </h2>
       <div
         className="testimonials-container"
         ref={sliderRef}
         onScroll={handleScroll}
       >
-        {testimonialsData.map((item) => {
+        {testimonialsData.map((item, index) => {
           return (
             <TestimonialCard
               key={item.id}
               name={item.name}
               occupation={item.occupation}
               content={item.testimonial}
+              data_aos={"fade-up"}
+              data_aos_delay={index * 400}
             />
           );
         })}
