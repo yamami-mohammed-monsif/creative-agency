@@ -8,6 +8,7 @@ import Portfolio from "./pages/portfolioPage/portfolio";
 import Contact from "./pages/contactPage/contact";
 import TermsOfService from "./pages/terms-of-service/TermsOfService";
 import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy";
+import NotFound from "./pages/notFoundPage/NotFound";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
