@@ -12,8 +12,6 @@ import NotFound from "./pages/notFoundPage/NotFound";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import "./App.css";
-
 function App() {
   useEffect(() => {
     Aos.init({

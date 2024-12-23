@@ -36,7 +36,7 @@
   .primary-navbar__nav-links {
     position: fixed;
     inset: 0 0 0 12rem;
-    background-color: white;
+    background-color: var(--clr-neutral-100);
     z-index: 9;
 
     flex-direction: column;

@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: clamp(40px, calc(40px + 0.0751 * (100vw - 375px)), 120px);
+  padding-block: clamp(40px, calc(40px + 0.03 * (100vw - 375px)), 72px);
+  height: max-content;
+  width: min(86.5%, 1240px);
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 90%;
-  padding: 30px;
+  inset: 0;
+  margin-inline: auto;
   z-index: 9999;
   background-color: var(--clr-neutral-100);
 }

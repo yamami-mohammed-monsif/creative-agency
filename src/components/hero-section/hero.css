@@ -1,6 +1,6 @@
 .hero-section {
   text-align: center;
-  margin-top: clamp(40px, calc(40px + 0.0281 * (100vw - 375px)), 70px);
+  margin-top: clamp(89px, calc(40px + 0.03 * (100vw - 375px)), 121px);
   margin-bottom: clamp(100px, calc(100px + 0.0563 * (100vw - 375px)), 160px);
 }
 
