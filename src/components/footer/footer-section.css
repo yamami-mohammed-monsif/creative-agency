@@ -110,6 +110,7 @@
 
 .copyright {
   text-align: center;
+  font-size: var(--fs-button);
 }
 
 hr {
