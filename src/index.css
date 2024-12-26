@@ -93,7 +93,7 @@ body {
   font-family: var(--ff-main);
   font-size: var(--fs-regular);
   color: var(--clr-neutral-400);
-  padding-top: clamp(40px, calc(40px + 0.0309 * (100vw - 375px)), 73px);
+  padding-top: clamp(24px, calc(24px + 0.0309 * (100vw - 375px)), 56px);
 }
 
 .container {
